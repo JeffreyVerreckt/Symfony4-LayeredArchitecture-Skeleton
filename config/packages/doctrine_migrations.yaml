@@ -1,7 +1,5 @@
-mappings:
-    App\Domain:
-        is_bundle: false
-        type: annotation
-        dir: '%kernel.project_dir%/src/Domain/Entity'
-        prefix: 'App\Domain\Entity'
-        alias: Domain
+doctrine_migrations:
+    dir_name: '%kernel.project_dir%/src/Infrastructure/Migrations'
+    # namespace is arbitrary but should be different from App\Migrations
+    # as migrations classes should NOT be autoloaded
+    namespace: DoctrineMigrations
